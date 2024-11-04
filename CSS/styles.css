@@ -25,7 +25,7 @@ header h1 {
     display: none;
 }
 
-/* Style the nav bar to take up the entire header */
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -33,25 +33,19 @@ header nav {
     padding: 0;
 }
 
-/* Ensure nav buttons take up space evenly */
+
 header nav a {
     display: flex;
-    /* Make nav buttons use flex layout */
     align-items: center;
-    /* Center text vertically */
     justify-content: center;
-    /* Center text horizontally */
     flex: 1;
-    /* Each button takes equal width */
     text-align: center;
     color: white;
     text-decoration: none;
     padding: 10px;
     margin: 0 5px;
-    /* Add spacing between buttons */
     border-radius: 5px;
     background-color: #6b8e23;
-    /* Button background color */
 }
 
 header nav a.active {
@@ -110,7 +104,7 @@ header nav a.active {
     width: 100%;
 }
 
-/* Hide the first and second images on mobile */
+/* Hides the first and second images on mobile */
 .text-left-image-right:nth-of-type(1) img,
 .image-left-text-right:nth-of-type(2) img {
     display: none;
@@ -194,18 +188,6 @@ footer {
     padding-top: 10px;
 }
 
-/* Scrolling image gallery */
-.image-gallery {
-    display: flex;
-    overflow-x: scroll;
-    gap: 10px;
-}
-
-.image-gallery img {
-    max-width: 100px;
-    height: auto;
-}
-
 .media-video {
     display: none;
     /* Hidden on mobile layout*/
@@ -226,11 +208,8 @@ footer {
 
 .bird-card img {
     width: 175px;
-    /* Set the image width to 400px */
     height: 175px;
-    /* Set the image height to 400px */
     object-fit: cover;
-    /* Ensures the image fits the container without distortion */
     border-radius: 10px;
 }
 
@@ -242,7 +221,6 @@ footer {
 /* Modal styling */
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
     z-index: 1;
     padding-top: 60px;
@@ -290,7 +268,6 @@ section.content {
 
 #emailInput {
     width: 80%;
-    /* Email input takes more width */
     padding: 8px;
     font-size: 14px;
     margin-bottom: 10px;
@@ -301,7 +278,6 @@ section.content {
 
 button {
     width: 40%;
-    /* Submit button takes less width */
     padding: 8px;
     font-size: 18px;
     border-radius: 5px;
@@ -317,7 +293,6 @@ button {
     background-size: cover;
 }
 
-/* Ensure the body of mail-subscription-page stretches to keep footer at bottom */
 body,
 html {
     height: 100%;
@@ -334,15 +309,12 @@ html {
     background-size: cover;
 }
 
-/* Main content with spacing adjustments for both mobile and desktop */
 section.content {
     flex: 1;
     padding: 20px;
-    /* Spacing for consistent padding */
     gap: 20px;
 }
 
-/* Section boxes for spacing between elements */
 .section-box {
     margin-bottom: 20px;
     padding: 20px;
@@ -350,11 +322,9 @@ section.content {
     border-radius: 10px;
 }
 
-/* Styling for the email input and submit button */
 #emailInput {
     width: 80%;
     max-width: 300px;
-    /* Sets max width for desktop */
     padding: 8px;
     font-size: 14px;
     margin-bottom: 10px;
@@ -366,7 +336,6 @@ section.content {
 button {
     width: 40%;
     max-width: 150px;
-    /* Sets max width for desktop */
     padding: 8px;
     font-size: 18px;
     border-radius: 5px;
@@ -378,7 +347,6 @@ button {
     cursor: pointer;
 }
 
-/* Footer at the bottom */
 footer {
     background-color: #50693a;
     color: white;
@@ -394,14 +362,10 @@ footer {
 
 .audio-player {
     width: 100%;
-    /* Full width of the container */
     max-width: 400px;
-    /* Increase max width for desktop */
     display: block;
     margin: 10px auto;
-    /* Center the audio player */
     height: 40px;
-    /* Ensures enough height for visibility */
 }
 
 
@@ -477,7 +441,6 @@ footer {
         margin: 50px auto;
     }
 
-    /* Shows full navbar and hides the hamburger menu */
     header {
         display: flex;
         justify-content: space-between;
@@ -498,19 +461,11 @@ footer {
 
     header nav a.active {
         background-color: #ff5722;
-        /* Highlight the active page */
     }
 
-    /* Hide hamburger menu */
-    .hamburger-menu {
-        display: none;
-    }
-
-    /* Align the bird image to the left and paragraph to the right */
     .bird-day-paragraph-section {
         display: flex;
         align-items: center;
-        /* Centers the paragraph vertically next to the image */
         gap: 20px;
     }
 
@@ -518,20 +473,6 @@ footer {
     .media-video {
         width: 100%;
         margin-bottom: 20px;
-    }
-
-    /* Audio Section and Scrolling Gallery adjustments for desktop */
-
-    /* Scrolling image gallery */
-    .image-gallery {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 40px;
-    }
-
-    .image-gallery img {
-        max-width: 150px;
     }
 
     .media-video,
@@ -546,7 +487,6 @@ footer {
 
     .bird-card img {
         width: 100%;
-        /* Ensures the image fills the card width */
         height: auto;
     }
 
@@ -557,7 +497,6 @@ footer {
         padding: 40px;
     }
 
-    /* Flex container for the first paragraph and image */
     .donation-info-container {
         display: flex;
         align-items: center;
@@ -567,21 +506,17 @@ footer {
         margin-bottom: 40px;
     }
 
-    /* Styles for the paragraph in the first section */
     .donation-info-container .section-box {
         width: 60%;
     }
 
-    /* Styles for the image in the first section */
     .donation-info-image {
         display: inline;
         margin-left: 150px;
-        /* Add spacing between the paragraph and the image */
         width: 150px;
         height: 150px;
     }
 
-    /* Gallery layout for desktop - single row of four images */
     .gallery {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
